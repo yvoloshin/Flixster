@@ -3,7 +3,7 @@
 	font-family: "Helvetica Neue", Helvetica;
   	font-weight: 200;
   	box-shadow: 0px 1px 3px #2a2a2a;
-  	background:url('congruent_outline.png');
+  	background:url('use_your_illusion.png');
 }
 
 .navbar-inverse a.navbar-brand {
@@ -18,7 +18,7 @@
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
-	height: 600px;
+	height: 500px;
 	box-shadow: 0px 3px 8px #2a2a2a;
 }
 
@@ -44,4 +44,13 @@ h1, h2, h3, h4, .navbar {
 
 .btn {
 	border-radius:0;
+}
+
+body {
+	background:url('use_your_illusion.png');
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.features {
+	color:white;
 }
