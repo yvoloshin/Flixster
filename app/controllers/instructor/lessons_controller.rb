@@ -27,3 +27,4 @@ class Instructor::LessonsController < ApplicationController
 			return render :text => 'Unauthorized', :status => :unauthorized
 		end
 	end
+end
