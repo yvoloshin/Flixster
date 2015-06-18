@@ -1,6 +1,6 @@
 class Instructor::CoursesController < ApplicationController
 	before_action :authenticate_user!
-	before_action :require_authorized_for_current_course
+	before_action :require_authorized_for_current_course, :only => [:show]
 
 	def new
 		@course = Course.new
@@ -11,8 +11,8 @@ class Instructor::CoursesController < ApplicationController
 		if @course.valid?
 			redirect_to instructor_course_path(@course)
 		else
-    render :new, :status => :unprocessable_entity
-    end
+    	render :new, :status => :unprocessable_entity
+    	end
 	end
 
 	def show
