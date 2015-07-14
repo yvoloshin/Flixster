@@ -3,13 +3,12 @@ class Instructor::SectionsController < ApplicationController
 	before_action :require_authorized_for_current_course
 	before_action :require_authorized_for_current_section, :only => [:update]
 
-
 	def new
 		@section = Section.new
 	end
 
 	def create
-		@section = @current_course.sections.create(section_params)
+		@section = current_course.sections.create(section_params)
 		redirect_to instructor_course_path(current_course)
 	end
 
@@ -27,7 +26,11 @@ class Instructor::SectionsController < ApplicationController
 
 	helper_method :current_course
 	def current_course
+		if params[:course_id].present?
+            Course.find(params[:course_id])
+        else
 		current_section.course
+		end
 	end
 
 	def current_section
