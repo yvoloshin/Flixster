@@ -6,11 +6,14 @@ Flixster::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#index'
+  get 'privacy', :to => 'static_pages#privacy'
+  get 'careers', :to => 'static_pages#careers'
+  get 'team', :to => 'static_pages#team'
   resource :dashboard, :only => [:show]
   resources :courses, :only => [:index, :show] do
     resources :enrollments, :only => [:create]
   end
-  resources :lessons, :only => [:show] 
+  resources :lessons, :only => [:show]
 
   namespace :instructor do
     resources :lessons, :only => [:update]
@@ -18,7 +21,7 @@ Flixster::Application.routes.draw do
       resources :lessons, :only => [:create]
     end
     resources :courses, :only => [:new, :create, :show] do
-      resources :sections, :only => [:create]    
+      resources :sections, :only => [:create]
     end
   end
 
