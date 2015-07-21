@@ -50,8 +50,8 @@
       		<li><%= link_to 'Sign up', new_user_registration_path %></li>
     		<% end %>
         </ul>
-          
-          
+
+
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -71,9 +71,46 @@
 
   <div id="footer">
     <div class="container">
+      <div class="col-xs-12 col-sm-3">
         <b>Teachers</b>
         <br />
         <%= link_to "Teach course", new_instructor_course_path %>
+        <br />
+        <%= link_to "My Dashboard", dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to "Team", '#' %>
+        <br />
+        <%= link_to "Careers", '#' %>
+        <br />
+        <%= link_to "Privacy Policy", '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        ken@thefirehoseproject.com
+        <br />
+        One Kendall Square
+        <br />
+        Cambridge MA, 02113
+      </div>
+      <div class="col-xs-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'http://www.facebook.com' do %>
+          <%= image_tag 'facebook.png', :class => 'social-button' %>
+        <% end %>
+        <%= link_to 'http://www.twitter.com' do %>
+          <%= image_tag 'twitter.png', :class => 'social-button' %>
+        <% end %>
+        <%= link_to 'https://github.com/yvoloshin/Flixster' do %>
+          <%= image_tag 'github.png', :class => 'social-button' %>
+        <% end %>
+      </div>
+
 
     </div>
   </div>
