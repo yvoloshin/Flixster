@@ -12,6 +12,16 @@
   	color: white;
 }
 
+.Site {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
 .hero {
 	background: url('hero.jpg') no-repeat center center fixed;
   	-webkit-background-size: cover;
@@ -64,6 +74,7 @@ body {
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding:10px;
+	opacity: 1 !important;
 
 }
 
@@ -73,16 +84,6 @@ body {
 
 .clr {
   clear:both;
-}
-
-.Site {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-}
-
-.Site-content {
-  flex: 1;
 }
 
 .field_with_errors {
@@ -161,4 +162,12 @@ ul .header .glyphicon {
 
 .privacy {
 	background-color:white;
+	opacity: 1 !important;
+}
+
+.Site-footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
