@@ -20,8 +20,8 @@
     .vjs-fullscreen {padding-top: 0px}
     </style>
   </head>
-  <body class="Site">
-    <main class="Site-content">
+  <body>
+    <div id="wrap">
       <nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -65,12 +65,12 @@
 
       <%= yield %>
 
-    </main>
+    </div>
 
     <br class="clr" />
 
-    <footer class="Site-footer">
-      <div class="footer">
+    <div id="footer">
+      <div class="container col-xs-10 col-xs-offset-1">
         <div class="col-xs-12 col-sm-3">
           <b>Teachers</b>
           <br />
@@ -109,6 +109,6 @@
           <% end %>
         </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

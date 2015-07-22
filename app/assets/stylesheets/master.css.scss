@@ -12,16 +12,6 @@
   	color: white;
 }
 
-.Site {
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-}
-
-.Site-content {
-  flex: 1;
-}
-
 .hero {
 	background: url('hero.jpg') no-repeat center center fixed;
   	-webkit-background-size: cover;
@@ -163,11 +153,4 @@ ul .header .glyphicon {
 .privacy {
 	background-color:white;
 	opacity: 1 !important;
-}
-
-.Site-footer {
-  -webkit-box-flex: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
 }
